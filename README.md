@@ -1,29 +1,12 @@
-# VS Code ES7 React/Redux/React-Native/JS snippets
+## td-react-snippets
+支持常见dva react组价的快速生成，在es7 react snippets上去除ts支持，加入部分私有云代码规范生成
+直接输入快速命令后按tab
 
-[![Version](https://vsmarketplacebadge.apphb.com/version/dsznajder.es7-react-js-snippets.svg)](https://vsmarketplacebadge.apphb.com/version-short/dsznajder.es7-react-js-snippets.svg)
-[![Install](https://vsmarketplacebadge.apphb.com/installs/dsznajder.es7-react-js-snippets.svg)](https://vsmarketplacebadge.apphb.com/installs-short/dsznajder.es7-react-js-snippets.svg)
-[![Downloads](https://vsmarketplacebadge.apphb.com/downloads/dsznajder.es7-react-js-snippets.svg)](https://vsmarketplacebadge.apphb.com/downloads-short/dsznajder.es7-react-js-snippets.svg)
-[![Ratings](https://vsmarketplacebadge.apphb.com/rating-short/dsznajder.es7-react-js-snippets.svg)](https://vsmarketplacebadge.apphb.com/rating-short/dsznajder.es7-react-js-snippets.svg)
-
-This extension provides you JavaScript and React/Redux snippets in ES7 with Babel plugin features for [VS Code](https://code.visualstudio.com/)
-
-## Search command
-
-You can search through snippets with `ES7 snippet search` command which can be run with `CMD + Shift + P` or just use `CMD + Shift + R` keybinding.
-
-Here is direct link to marketplace [ES7 React/Redux/React-Native/JS Snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
-
-## Supported languages (file extensions)
-
-- JavaScript (.js)
-- JavaScript React (.jsx)
-- TypeScript (.ts)
-- TypeScript React (.tsx)
-
-## Snippets info
-
-Every space inside `{ }` and `( )` means that this is pushed into next line :)
-`$` represent each step after `tab`.
+## TD Methods
+### dvaPage 生成页面
+### dvaModel 生成dva store
+### dvaFormPage 生成form页面
+### dvaTable 生成antd-table标签
 
 ## Basic Methods
 

@@ -1,14 +1,14 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode'
-
-const snippets = require('../snippets/snippets.json')
-
 type Snippet = {
   body: Array<string> | string
   description: string
   prefix: Array<string> | string
 }
+const snippets = require('../snippets/snippets.json')
+const dvaSnippets = require('../snippets/dva.json')
+const allSnippets = Object.assign({},dvaSnippets,snippets)
 
 const convertSnippetArrayToString = (snippetArray: Array<string>): string => snippetArray.join('\n')
 
@@ -23,10 +23,9 @@ export function activate(context: vscode.ExtensionContext) {
   // Now provide the implementation of the command with registerCommand
   // The commandId parameter must match the command field in package.json
   let disposable = vscode.commands.registerCommand('extension.snippetSearch', async () => {
-    const items = Object.entries(snippets as Array<Snippet>).map(
+	const items = Object.entries(allSnippets as Array<Snippet>).map(
       ([shortDescription, { prefix, body, description }], index) => {
         const value = typeof prefix === 'string' ? prefix : prefix[0]
-
         return {
           id: index,
           description: description || shortDescription,

@@ -19,7 +19,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dsznajder/vscode-es7-javascript-react-snippets"
+    "url": "https://github.com/mizy/td-react-snipppets.git"
   },
   "categories": [
     "Snippets"

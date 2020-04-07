@@ -1,8 +1,8 @@
-## td-react-snippets
+## react-snippets
 支持常见dva + antd + react组件的快速生成，基于es7 react snippets上去除ts支持，加入部分私有云代码规范生成
 直接输入快速命令后按tab
 
-## TD Methods
+## Methods
 ### dvaPage 生成页面
 ### dvaModel 生成dva store
 ### dvaFormPage 生成form页面

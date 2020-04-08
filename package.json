@@ -1,89 +1,82 @@
 {
-  "name": "td-react-snippets",
-  "displayName": "td-react-snippets",
-  "description": "同盾前端常用快捷命令",
-  "version": "2.3.7",
-  "publisher": "rookie",
-  "icon": "images/logo.png",
-  "scripts": {
-    "vscode:prepublish": "npm run compile",
-    "build": "vsce package",
-    "publish": "vsce publish",
-    "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./",
-    "postinstall": "node ./node_modules/vscode/bin/install",
-    "test": "npm run compile && node ./node_modules/vscode/bin/test"
-  },
-  "keywords": [
-    "snippets",
-    "react",
-    "redux",
-    "react-native",
-    "javascript",
-    "typescript"
-  ],
-  "engines": {
-    "vscode": "^1.11.0"
-  },
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/mizy/td-react-snipppets.git"
-  },
-  "categories": [
-    "Snippets"
-  ],
-  "extensionKind": "ui",
-  "main": "./out/index.js",
-  "activationEvents": [
-    "onCommand:extension.snippetSearch"
-  ],
-  "contributes": {
-    "commands": [
-      {
-        "command": "extension.snippetSearch",
-        "title": "ES7 snippet search"
-      }
+    "name": "td-react-snippets",
+    "displayName": "td-react-snippets",
+    "description": "同盾前端常用快捷命令",
+    "version": "2.3.7",
+    "publisher": "rookie",
+    "icon": "images/logo.png",
+    "scripts": {
+        "init": "node make.js",
+        "vscode:prepublish": "npm run compile",
+        "build": "vsce package",
+        "publish": "vsce publish",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    },
+    "keywords": [
+        "snippets",
+        "react",
+        "redux",
+        "react-native",
+        "javascript",
+        "typescript"
     ],
-    "keybindings": [
-      {
-        "command": "extension.snippetSearch",
-        "key": "ctrl+alt+r",
-        "mac": "shift+cmd+r",
-        "when": "editorTextFocus"
-      }
+    "engines": {
+        "vscode": "^1.11.0"
+    },
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mizy/td-react-snipppets.git"
+    },
+    "categories": [
+        "Snippets"
     ],
-    "snippets": [
-		{
-			"language": "javascript",
-			"path": "./snippets/tnt.json"
-		},
-		{
-		"language": "javascriptreact",
-		"path": "./snippets/tnt.json"
-		},
-      {
-        "language": "javascript",
-        "path": "./snippets/snippets.json"
-      },
-      {
-        "language": "javascriptreact",
-        "path": "./snippets/snippets.json"
-      },
-      {
-        "language": "javascript",
-        "path": "./snippets/dva.json"
-      },
-      {
-        "language": "javascriptreact",
-        "path": "./snippets/dva.json"
-      }
-    ]
-  },
-  "devDependencies": {
-    "typescript": "3.4.2",
-    "vscode": "1.1.33",
-    "tslint": "5.15.0",
-    "@types/node": "11.13.0"
-  }
+    "extensionKind": "ui",
+    "main": "./out/index.js",
+    "activationEvents": [
+        "onCommand:extension.snippetSearch"
+    ],
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.snippetSearch",
+                "title": "ES7 snippet search"
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "extension.snippetSearch",
+                "key": "ctrl+alt+r",
+                "mac": "shift+cmd+r",
+                "when": "editorTextFocus"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/tnt.json"
+            },
+            {
+                "language": "javascriptreact",
+                "path": "./snippets/tnt.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/snippets.json"
+            },
+            {
+                "language": "javascriptreact",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    },
+    "devDependencies": {
+        "typescript": "3.4.2",
+        "vscode": "1.1.33",
+        "tslint": "5.15.0",
+        "@types/node": "11.13.0"
+    }
 }

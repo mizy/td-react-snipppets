@@ -2,7 +2,7 @@
     "name": "td-react-snippets",
     "displayName": "td-react-snippets",
     "description": "同盾前端常用快捷命令",
-    "version": "2.3.8",
+    "version": "2.3.9",
     "publisher": "rookie",
     "icon": "images/logo.png",
     "scripts": {
@@ -29,7 +29,7 @@
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/mizy/td-react-snipppets.git"
+        "url": "https://github.com/tntd/react-snippets.git"
     },
     "categories": [
         "Snippets"

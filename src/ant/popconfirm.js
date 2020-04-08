@@ -1,14 +1,14 @@
 <Popconfirm
-	title="Are you sure delete this task?"
-	onConfirm={() => {
+    title="Are you sure delete this task?"
+    onConfirm={() => {
 
-	}}
-	onCancel={() => {
+    }}
+    onCancel={() => {
 
-	}}
-	okText="Yes"
-	cancelText="No"
-	placement="top"	// topLeft，top，topRight，leftTop，left，leftBottom，rightTop，right，rightBottom等
+    }}
+    okText="Yes"
+    cancelText="No"
+    placement="top"	// topLeft，top，topRight，leftTop，left，leftBottom，rightTop，right，rightBottom等
 >
-	<a href="#">Delete</a>
-</Popconfirm>;
+    <a href="#">Delete</a>
+</Popconfirm>

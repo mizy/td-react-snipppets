@@ -2,7 +2,7 @@
   "name": "td-react-snippets",
   "displayName": "td-react-snippets",
   "description": "同盾前端常用快捷命令",
-  "version": "2.3.6",
+  "version": "2.3.7",
   "publisher": "rookie",
   "icon": "images/logo.png",
   "scripts": {
@@ -56,8 +56,12 @@
     "snippets": [
 		{
 			"language": "javascript",
-			"path": "./out/addon.js"
-		  },
+			"path": "./snippets/tnt.json"
+		},
+		{
+		"language": "javascriptreact",
+		"path": "./snippets/tnt.json"
+		},
       {
         "language": "javascript",
         "path": "./snippets/snippets.json"

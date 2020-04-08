@@ -1,7 +1,6 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode'
-const addon = require("./addon");
 type Snippet = {
   body: Array<string> | string
   description: string
@@ -9,7 +8,8 @@ type Snippet = {
 }
 const snippets = require('../snippets/snippets.json')
 const dvaSnippets = require('../snippets/dva.json');
-const allSnippets = Object.assign({},addon,dvaSnippets,snippets)
+const tntSnippets = require('../snippets/tnt.json');
+const allSnippets = Object.assign({},tntSnippets,dvaSnippets,snippets)
 
 const convertSnippetArrayToString = (snippetArray: Array<string>): string => snippetArray.join('\n')
 

@@ -2,8 +2,8 @@
     "name": "td-react-snippets",
     "displayName": "td-react-snippets",
     "description": "同盾前端常用快捷命令",
-    "version": "2.3.11",
-    "publisher": "rookie",
+    "version": "2.3.13",
+    "publisher": "td-tntd",
     "icon": "images/logo.png",
     "scripts": {
         "init": "node make.js",

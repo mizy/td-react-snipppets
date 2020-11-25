@@ -1,3 +1,6 @@
+import { Collapse } from 'antd';
+const { Panel } = Collapse;
+
 const genExtra = () => (
     <Icon
         type="setting"

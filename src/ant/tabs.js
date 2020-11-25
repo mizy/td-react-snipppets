@@ -1,3 +1,6 @@
+import { Tabs } from 'antd';
+const { TabPane } = Tabs;
+
 <Tabs
     defaultActiveKey="1"
     onChange={(activeKey) => {

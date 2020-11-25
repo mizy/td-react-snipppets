@@ -1,3 +1,6 @@
+import { Steps } from 'antd';
+const { Step } = Steps;
+
 <div>
     <Steps current={1}>
         <Step title="Finished" description="This is a description." />

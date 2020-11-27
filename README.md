@@ -2,36 +2,42 @@
 支持常见react、hook、dva、antd组件的快速生成，基于es7 react snippets上去除ts支持，加入部分私有云代码规范生成；
 直接输入快速命令后按tab
 
-## antd
-### antAlert
-### antCard
-### antConfirm
-### antDrawer
-### antDropdown
-### antEmpty
-### antModal
-### antNotification
-### antPagination
-### antPopconfirm
-### antPopover
-### antProgress
-### antRadio
-### antSelect
-### antSwitch
-### antTable
-### antTabs
+## 快捷键
+### antd
+- antAlert
+- antCard
+- antConfirm
+- antDrawer
+- antDropdown
+- antEmpty
+- antModal
+- antNotification
+- antPagination
+- antPopconfirm
+- antPopover
+- antProgress
+- antRadio
+- antSelect
+- antSwitch
+- antTable
+- antTabs
 
-## hook
-### hookDva
-### hookModal
-### hookPage
-### hookTable
+### page
+- pageForm3Modal
+- pageForm4Hook
+- pageForm4Class
+- pageForm4Modal
+- pageDefault
+- pageDva
+- pageModal
+- pageTable
+- pageModel
+- pageQueryList
+- pageService
+- pageTabPage
+- pageUpload
 
-## tnt
-### tntModel
-### tntService
-
-## Basic Methods
+### Basic Methods
 
 |  Prefix | Method                                              |
 | ------: | --------------------------------------------------- |
@@ -60,7 +66,7 @@
 |   `cp→` | `const { } = this.props`                            |
 |   `cs→` | `const { } = this.state`                            |
 
-## React
+### React
 
 |      Prefix | Method                                                                              |
 | ----------: | ----------------------------------------------------------------------------------- |
@@ -97,18 +103,18 @@
 |     `fref→` | `const ref = React.createRef()`                                                     |
 |      `bnd→` | `this.methodName = this.methodName.bind(this)`                                      |
 
-## React Hooks
+### React Hooks
 
 - All hooks from [official docs](https://reactjs.org/docs/hooks-reference.html) are added with hook name prefix.
 
-## React Native
+### React Native
 
 |     Prefix | Method                                 |
 | ---------: | -------------------------------------- |
 |    `imrn→` | `import { $1 } from 'react-native'`    |
 | `rnstyle→` | `const styles = StyleSheet.create({})` |
 
-## Redux
+### Redux
 
 |       Prefix | Method                    |
 | -----------: | ------------------------- |
@@ -117,7 +123,7 @@
 | `rxreducer→` | `redux reducer template`  |
 |  `rxselect→` | `redux selector template` |
 
-## PropTypes
+### PropTypes
 
 |    Prefix | Method                                   |
 | --------: | ---------------------------------------- |
@@ -152,7 +158,7 @@
 |  `ptany→` | `PropTypes.any`                          |
 | `ptypes→` | `static propTypes = {}`                  |
 
-## GraphQL
+### GraphQL
 
 |`graphql→`|`import { compose, graphql } from 'react-apollo'`|
 
@@ -162,7 +168,7 @@
 export default compose(graphql($1, { name: $2 }))($3)
 ```
 
-## Console
+### Console
 
 | Prefix | Method                              |
 | -----: | ----------------------------------- |
@@ -181,7 +187,7 @@ export default compose(graphql($1, { name: $2 }))($3)
 | `cwa→` | `console.warn`                      |
 | `cin→` | `console.info`                      |
 
-## React Components
+### React Components
 
 ### `rcc`
 
@@ -207,491 +213,4 @@ export class FileName extends Component {
 }
 
 export default $1
-```
-
-### `rcep`
-
-```javascript
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-
-export class FileName extends Component {
-  static propTypes = {}
-
-  render() {
-    return <div>$2</div>
-  }
-}
-
-export default $1
-```
-
-### `rpc`
-
-```javascript
-import React, { PureComponent } from 'react'
-
-export default class FileName extends PureComponent {
-  render() {
-    return <div>$2</div>
-  }
-}
-```
-
-### `rpcp`
-
-```javascript
-import React, { PureComponent } from 'react'
-import PropTypes from 'prop-types'
-
-export default class FileName extends PureComponent {
-  static propTypes = {}
-
-  render() {
-    return <div>$2</div>
-  }
-}
-```
-
-### `rpce`
-
-```javascript
-import React, { PureComponent } from 'react'
-import PropTypes from 'prop-types'
-
-export class FileName extends PureComponent {
-  static propTypes = {}
-
-  render() {
-    return <div>$2</div>
-  }
-}
-
-export default FileName
-```
-
-### `rccp`
-
-```javascript
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-
-export default class FileName extends Component {
-  static propTypes = {
-    $2: $3,
-  }
-
-  render() {
-    return <div>$4</div>
-  }
-}
-```
-
-### `rfcp`
-
-```javascript
-import React from 'react'
-import PropTypes from 'prop-types'
-
-function $1(props) {
-  return <div>$0</div>
-}
-
-$1.propTypes = {}
-
-export default $1
-```
-
-### `rfc`
-
-```javascript
-import React from 'react'
-
-export default function $1() {
-  return <div>$0</div>
-}
-```
-
-### `rfce`
-
-```javascript
-import React from 'react'
-
-function $1() {
-  return <div>$0</div>
-}
-
-export default $1
-```
-
-### `rafcp`
-
-```javascript
-import React from 'react'
-import PropTypes from 'prop-types'
-
-const $1 = props => {
-  return <div>$0</div>
-}
-
-$1.propTypes = {}
-
-export default $1
-```
-
-### `rafc`
-
-```javascript
-import React from 'react'
-
-const $1 = () => {
-  return <div>$0</div>
-}
-
-export default $1
-```
-
-### `rafce`
-
-```javascript
-import React from 'react'
-
-const $1 = () => {
-  return <div>$0</div>
-}
-
-export default $1
-```
-
-### `rmc`
-
-```javascript
-import React, { memo } from 'react'
-
-export default memo(function $1() {
-  return <div>$0</div>
-})
-```
-
-### `rmcp`
-
-```javascript
-import React, { memo } from 'react'
-import PropTypes from 'prop-types'
-
-const $1 = memo(function $1(props) {
-  return <div>$0</div>
-})
-
-$1.propTypes = {}
-
-export default $1
-```
-
-### `rcredux`
-
-```javascript
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-import { connect } from 'react-redux'
-
-export class FileName extends Component {
-  static propTypes = {
-    $2: $3,
-  }
-
-  render() {
-    return <div>$4</div>
-  }
-}
-
-const mapStateToProps = state => ({})
-
-const mapDispatchToProps = {}
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps,
-)(FileName)
-```
-
-### `reduxmap`
-
-```javascript
-const mapStateToProps = state => ({})
-
-const mapDispatchToProps = {}
-```
-
-## React Native Components
-
-### `rnc`
-
-```javascript
-import React, { Component } from 'react'
-import { Text, View } from 'react-native'
-
-export default class FileName extends Component {
-  render() {
-    return (
-      <View>
-        <Text> $2 </Text>
-      </View>
-    )
-  }
-}
-```
-
-### `rnf`
-
-```javascript
-import React from 'react'
-import { View, Text } from 'react-native'
-
-const $1 = () => {
-  return (
-    <View>
-      <Text> $2 </Text>
-    </View>
-  )
-}
-
-export default $1
-```
-
-### `rncs`
-
-```javascript
-import React, { Component } from 'react'
-import { Text, StyleSheet, View } from 'react-native'
-
-export default class FileName extends Component {
-  render() {
-    return (
-      <View>
-        <Text> $2 </Text>
-      </View>
-    )
-  }
-}
-
-const styles = StyleSheet.create({})
-```
-
-### `rnce`
-
-```javascript
-import React, { Component } from 'react'
-import { Text, View } from 'react-native'
-
-export class FileName extends Component {
-  render() {
-    return (
-      <View>
-        <Text> $2 </Text>
-      </View>
-    )
-  }
-}
-
-export default $1
-```
-
-### `rncredux`
-
-```javascript
-import React, { Component } from 'react'
-import { View, Text } from 'react-native'
-import PropTypes from 'prop-types'
-import { connect } from 'react-redux'
-
-export class FileName extends Component {
-  static propTypes = {
-    $2: $3,
-  }
-
-  render() {
-    return (
-      <View>
-        <Text> $2 </Text>
-      </View>
-    )
-  }
-}
-
-const mapStateToProps = state => ({})
-
-const mapDispatchToProps = {}
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps,
-)(FileName)
-```
-
-## Others
-
-### `cmmb`
-
-```JS
-/**
-|--------------------------------------------------
-| $1
-|--------------------------------------------------
-*/
-```
-
-### `desc`
-
-```javascript
-describe('$1', () => {
-  $2
-})
-```
-
-### `test`
-
-```javascript
-test('should $1', () => {
-  $2
-})
-```
-
-### `tit`
-
-```javascript
-it('should $1', () => {
-  $2
-})
-```
-
-### `stest`
-
-```javascript
-import React from 'react'
-import renderer from 'react-test-renderer'
-
-import { ${1:ComponentName} } from '../${1:ComponentName}'
-
-describe('<${1:ComponentName} />', () => {
-  const defaultProps = {}
-  const wrapper = renderer.create(<${1:ComponentName} {...defaultProps} />)
-
-  test('render', () => {
-    expect(wrapper).toMatchSnapshot()
-  })
-})
-```
-
-### `srtest`
-
-```javascript
-import React from 'react'
-import renderer from 'react-test-renderer'
-import { Provider } from 'react-redux'
-
-import store from 'src/store'
-import { ${1:ComponentName} } from '../${1:ComponentName}'
-
-describe('<${1:ComponentName} />', () => {
-  const defaultProps = {}
-  const wrapper = renderer.create(
-    <Provider store={store}>
-      <${1:${TM_FILENAME_BASE}} {...defaultProps} />)
-    </Provider>,
-  )
-
-  test('render', () => {
-    expect(wrapper).toMatchSnapshot()
-  })
-})
-```
-
-### `sntest`
-
-```javascript
-import 'react-native'
-import React from 'react'
-import renderer from 'react-test-renderer'
-
-import ${1:ComponentName} from '../${1:ComponentName}'
-
-describe('<${1:ComponentName} />', () => {
-  const defaultProps = {
-
-  }
-
-  const wrapper = renderer.create(<${1:ComponentName} {...defaultProps} />)
-
-  test('render', () => {
-    expect(wrapper).toMatchSnapshot()
-  })
-})
-```
-
-### `snrtest`
-
-```javascript
-import 'react-native'
-import React from 'react'
-import renderer from 'react-test-renderer'
-import { Provider } from 'react-redux'
-
-import store from 'src/store/configureStore'
-import ${1:ComponentName} from '../${1:ComponentName}'
-
-describe('<${1:ComponentName} />', () => {
-  const defaultProps = {}
-  const wrapper = renderer.create(
-    <Provider store={store}>
-      <${1:ComponentName} {...defaultProps} />
-    </Provider>,
-  )
-
-  test('render', () => {
-    expect(wrapper).toMatchSnapshot()
-  })
-})
-```
-
-### `hocredux`
-
-```javascript
-import React from 'react'
-import PropTypes from 'prop-types'
-import { connect } from 'react-redux'
-
-export const mapStateToProps = state => ({
-
-})
-
-export const mapDispatchToProps = {
-
-}
-
-export const ${1:hocComponentName} = (WrappedComponent) => {
-  const hocComponent = ({ ...props }) => <WrappedComponent {...props} />
-
-  hocComponent.propTypes = {
-  }
-
-  return hocComponent
-}
-
-export default WrapperComponent => connect(mapStateToProps, mapDispatchToProps)(${1:hocComponentName}(WrapperComponent))
-```
-
-### `hoc`
-
-```javascript
-import React from 'react'
-import PropTypes from 'prop-types'
-
-export default WrappedComponent => {
-  const hocComponent = ({ ...props }) => <WrappedComponent {...props} />
-
-  hocComponent.propTypes = {}
-
-  return hocComponent
-}
 ```

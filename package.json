@@ -1,8 +1,8 @@
 {
-    "name": "td-react-snippets",
-    "displayName": "td-react-snippets",
+    "name": "tnt-react-snippets",
+    "displayName": "tnt-react-snippets",
     "description": "同盾前端常用快捷命令",
-    "version": "2.3.20",
+    "version": "1.0.0",
     "publisher": "td-tntd",
     "icon": "images/logo.png",
     "scripts": {

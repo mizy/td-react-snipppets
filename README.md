@@ -37,6 +37,12 @@
 - pageTabPage
 - pageUpload
 
+### func
+- dispatch
+- forEach
+- map
+- service
+- zhushi
 ### Basic Methods
 
 |  Prefix | Method                                              |

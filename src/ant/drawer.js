@@ -1,3 +1,5 @@
+import { Drawer } from 'antd';
+
 /**
  * mask：是否展示遮罩
  * maskClosable：点击蒙层是否允许关闭

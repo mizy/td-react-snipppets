@@ -1,3 +1,5 @@
+import { Spin } from 'antd';
+
 /**
  * delay：延迟显示加载效果的时间（防止闪烁）	ms
  * indicator：加载指示符

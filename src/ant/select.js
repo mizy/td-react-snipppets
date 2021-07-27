@@ -1,3 +1,6 @@
+import { Select } from 'antd';
+const { Option } = Select;
+
 <Select
     value={"jack" || undefined}
     style={{ width: 120 }}
@@ -10,5 +13,5 @@
     <Option value="lucy">Lucy</Option>
     <Option value="disabled" disabled>
         Disabled
-	</Option>
+    </Option>
 </Select>

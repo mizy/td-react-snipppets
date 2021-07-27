@@ -1,17 +1,22 @@
 import { useEffect, useState, Fragment } from "react";
 import { connect } from "dva";
 import { Input, Select, message, Modal } from "antd";
+// import service from './service';
+// import './index.less';
 
 export default props => {
     const { dispatch } = props;
     const [modalVisible, setModalVisible] = useState(false);
 
     useEffect(() => {
-        init();
+        getSolutionList();
     }, []);
 
-    const init = () => {
-        console.log("init function");
+    const getSolutionList = () => {
+        // const params = {};
+        // service.getSolutionList(params).then((data) => {
+        //     console.log('data', data);
+        // })
     };
 
     return (

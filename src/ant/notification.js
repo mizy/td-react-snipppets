@@ -1,5 +1,7 @@
+import { notification } from 'antd';
+
 // type：success，info，warning，error
-notification[type]({
+notification.success({
     message: "Notification Title",
     description: "This is the content of the notification."
 })

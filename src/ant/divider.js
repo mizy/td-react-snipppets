@@ -1,3 +1,5 @@
+import { Divider } from 'antd';
+
 <div>
     <Divider type="vertical" />
     <Divider dashed />

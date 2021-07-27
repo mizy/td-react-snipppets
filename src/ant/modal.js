@@ -1,3 +1,5 @@
+import { Modal } from 'antd';
+
 <Modal
     wrapClassName="modal-class"
     title="modal弹窗"

@@ -1,3 +1,5 @@
+import { Progress } from 'antd';
+
 <Progress
     percent={70}
     status="exception"	// success exception normal active

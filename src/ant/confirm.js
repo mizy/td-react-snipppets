@@ -1,3 +1,6 @@
+import { Modal } from 'antd';
+const { confirm } = Modal;
+
 confirm({
     title: "Are you sure delete this task?",
     content: "Some descriptions",

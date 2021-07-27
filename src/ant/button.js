@@ -1,3 +1,5 @@
+import { Button } from 'antd';
+
 <div>
     <Button type="primary">Primary</Button>
     <Button>Default</Button>

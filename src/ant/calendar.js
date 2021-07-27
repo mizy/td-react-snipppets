@@ -1,3 +1,5 @@
+import { Calendar } from 'antd';
+
 <Calendar
     onPanelChange={(value, mode) => {
         console.log(value, mode);

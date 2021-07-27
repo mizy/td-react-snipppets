@@ -1,3 +1,5 @@
+import { Card } from 'antd';
+
 <Card
     title="Default size card"
     extra={

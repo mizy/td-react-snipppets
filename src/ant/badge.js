@@ -1,3 +1,5 @@
+import { Badge } from 'antd';
+
 <div>
     <Badge count={5}>
         <a href="#" className="head-example" />

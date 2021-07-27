@@ -1,3 +1,5 @@
+import { Avatar } from 'antd';
+
 <div>
     <Avatar icon="user" />
     <Avatar icon={<Icon type="user" />} />

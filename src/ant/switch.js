@@ -1,3 +1,5 @@
+import { Switch } from 'antd';
+
 <Switch
     className="switch-name"
     checkedChildren="开"

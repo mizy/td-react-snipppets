@@ -1,3 +1,5 @@
+import { Popover } from 'antd';
+
 <Popover
     content={() => {
         return <div>内容</div>;
@@ -7,5 +9,5 @@
 >
     <Button type="primary">
         click me
-	</Button>
+    </Button>
 </Popover>

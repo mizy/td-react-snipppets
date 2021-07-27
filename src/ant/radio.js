@@ -1,3 +1,5 @@
+import { Radio } from 'antd';
+
 <Radio.Group
     value={this.state.value}
     onChange={(e) => {

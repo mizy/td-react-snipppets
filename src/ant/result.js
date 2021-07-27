@@ -1,3 +1,5 @@
+import { Result } from 'antd';
+
 <Result
     status="success"
     title="Successfully Purchased Cloud Server ECS!"

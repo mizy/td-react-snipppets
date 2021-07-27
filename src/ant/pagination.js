@@ -1,3 +1,5 @@
+import { Pagination } from 'antd';
+
 <Pagination
     size="small"
     total={85}

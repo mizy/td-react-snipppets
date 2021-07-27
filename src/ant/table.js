@@ -1,3 +1,5 @@
+import { Table } from 'antd';
+
 const columns = [
     {
         title: 'Name',

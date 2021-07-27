@@ -1,3 +1,5 @@
+import { Alert } from 'antd';
+
 <div>
     <Alert
         message="Success Tips"

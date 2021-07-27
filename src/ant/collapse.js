@@ -1,6 +1,10 @@
 import { Collapse } from 'antd';
 const { Panel } = Collapse;
 
+/**
+ * Collapse折叠面板
+ * 更多api见官网：https://ant.design/components/collapse-cn/
+*/
 const genExtra = () => (
     <Icon
         type="setting"

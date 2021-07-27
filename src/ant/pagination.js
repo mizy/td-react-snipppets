@@ -8,7 +8,7 @@ import { Pagination } from 'antd';
     defaultCurrent={1}
     showSizeChanger
     showQuickJumper
-    onChange={() => { }}
-    onShowSizeChange={() => { }}
+    onChange={(page, pageSize) => { }}
+    onShowSizeChange={(page, pageSize) => { }}
     simple={false}		// 简单模式
 />

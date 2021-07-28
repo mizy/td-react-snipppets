@@ -22,8 +22,10 @@ class DemoPage extends PureComponent {
         this.getList();
     }
 
-    componentDidUpdate(preProps) {
+    componentDidUpdate(prevProps, prevState) {
         // 组件更新
+        // 示例
+        // if ( prevState.flag !== this.state.flag ){}
     }
 
     componentWillUnmount() {

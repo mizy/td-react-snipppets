@@ -1,4 +1,4 @@
-import { QueryListScene } from 'tntd';
+import { QueryListScene, Handle } from 'tntd';
 import service from './service';
 
 const { QueryForm, QueryList, Field, createActions } = QueryListScene;
@@ -22,12 +22,51 @@ export default () => {
         }));
     };
     const columns = [
-        { title: '策略集/策略', dataIndex: 'name' },
-        { title: '所属应用', dataIndex: 'appDisplayName' },
-        { title: '描述', dataIndex: 'description' },
-        { title: '策略回测', dataIndex: 'eventType' },
-        { title: '回测状态', dataIndex: 'status' },
-        { title: '操作', dataIndex: 'operations' }
+        {
+            title: '名称',
+            dataIndex: 'name',
+            ellipsis: true,
+        },
+        {
+            title: '所属应用',
+            dataIndex: 'appDisplayName',
+            ellipsis: true,
+        },
+        {
+            title: '描述',
+            dataIndex: 'description'
+        },
+        {
+            title: '策略回测',
+            dataIndex: 'eventType'
+        },
+        {
+            title: '回测状态',
+            dataIndex: 'status'
+        },
+        {
+            title: '操作',
+            dataIndex: 'operations',
+            width: 150,
+            render: (text, row) => {
+                return (
+                    <Handle>
+                        <a
+                            onClick={() => {
+                                console.log("online");
+                            }}
+                        >
+                            上线
+                        </a>
+                        <a>查看</a>
+                        <a>编辑</a>
+                        <a>测试</a>
+                        <a>导入</a>
+                        <a>导出</a>
+                    </Handle>
+                )
+            }
+        }
     ];
     const onFormChange = (values, changeInfo) => {
         console.log('onFormChange', values, changeInfo);

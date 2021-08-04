@@ -23,9 +23,11 @@ export default class extends React.Component {
     onFinish = (values) => {
         console.log(values);
     };
+
     onFinishFailed = (errorInfo) => {
         console.log("Failed:", errorInfo);
     };
+
     onReset = () => {
         this.formRef.current.resetFields();
     };
@@ -42,14 +44,14 @@ export default class extends React.Component {
                 <Form.Item
                     name="username"
                     label="Username"
-                    rules={[{ required: true,message: "Please input your username!"}, ]}
+                    rules={[{ required: true, message: "Please input your username!" },]}
                 >
                     <Input />
                 </Form.Item>
                 <Form.Item
                     name="gender"
                     label="Gender"
-                    rules={[{ required: true,},]}
+                    rules={[{ required: true, },]}
                 >
                     <Select
                         placeholder="Select a option and change input text above"

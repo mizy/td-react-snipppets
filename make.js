@@ -10,9 +10,10 @@ namespace.forEach(dir => {
         let array = content.split("\n");
         const prefix = `${dir}${key[0].toUpperCase() + key.slice(1)}`
         res[prefix] = {
-            "prefix": dir,
+            "prefix": prefix,
             "body": array,
-            "description": prefix
+            "description": prefix,
+            "group": dir,
         }
     })
 })

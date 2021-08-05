@@ -144,7 +144,8 @@ export default props => {
 
     return (
         <Layout
-            logo=""
+            logo={<img src='/bifrost-resource/logo/logo9-color.svg' />}
+            className="tntd-layout"
             name="私有云全家桶"
             enName="Private Cloud"
             selectedAppKey="enterprice"
@@ -155,6 +156,9 @@ export default props => {
             userInfo={userInfo}
             selectedMenuKey="tagdata"
             menus={menus}
+            // isEmptyLayout={
+            //     ['/bridge/singlePage'].includes(location.pathname)
+            // }
             onMenuChange={onMenuChange}
             onMenuSelect={onMenuSelect}
             onLanguageChange={onLanguageChange}

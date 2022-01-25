@@ -2,7 +2,7 @@
     "name": "tnt-react-snippets",
     "displayName": "tnt-react-snippets",
     "description": "同盾前端常用快捷命令",
-    "version": "1.9.0",
+    "version": "1.9.2",
     "publisher": "td-tntd",
     "icon": "images/logo.png",
     "scripts": {
@@ -65,11 +65,27 @@
                 "path": "./snippets/tnt.json"
             },
             {
+                "language": "typescript",
+                "path": "./snippets/tnt.json"
+            },
+            {
+                "language": "typescriptreact",
+                "path": "./snippets/tnt.json"
+            },
+            {
                 "language": "javascript",
                 "path": "./snippets/snippets.json"
             },
             {
                 "language": "javascriptreact",
+                "path": "./snippets/snippets.json"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/snippets.json"
+            },
+            {
+                "language": "typescriptreact",
                 "path": "./snippets/snippets.json"
             }
         ]

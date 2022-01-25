@@ -95,16 +95,16 @@ export default () => {
                 // initialValues={{
                 //     type: 1
                 // }}
-                renderActions={() => null}
+                // renderActions={() => null}
                 onChange={onFormChange}
                 extraActions={
-                    // <Button
-                    //     onClick={() => {
-                    //         setModalVisible(true)
-                    //     }}
-                    // >
-                    //     添加用户
-                    // </Button>
+                    <Button
+                        onClick={() => {
+                            setModalVisible(true)
+                        }}
+                    >
+                        添加
+                    </Button>
                 }
             >
                 <Field

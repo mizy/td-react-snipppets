@@ -1,16 +1,20 @@
+import { useState } from 'react';
 import { QueryListScene, Handle } from 'tntd';
+import { Button } from 'antd';
 import service from './service';
 
 const { QueryForm, QueryList, Field, createActions } = QueryListScene;
 const actions = createActions();
 
 export default () => {
+    const [modalVisible, setModalVisible] = useState(false);
+
     const query = (params = {}) => {
         const { current: curPage = 1, pageSize = 20, dateRange, ...rest } = params;
 
         return service.query({
             ...rest,
-            // dateRange: (dateRange || []).map(
+            // dateRange: (dateRange || []).map(    // 对时间的处理
             //     date => date.format('YYYY-MM-DD HH:mm:ss')
             // ),
             curPage,
@@ -52,7 +56,7 @@ export default () => {
         {
             title: '操作',
             dataIndex: 'operations',
-            width: 150,
+            width: 250,
             render: (text, row) => {
                 return (
                     <Handle>
@@ -85,13 +89,23 @@ export default () => {
         <QueryListScene
             query={query}
             actions={actions}
+            title='xx页面'
         >
             <QueryForm
                 // initialValues={{
                 //     type: 1
                 // }}
-                renderActions={() => null}
+                // renderActions={() => null}
                 onChange={onFormChange}
+                extraActions={
+                    <Button
+                        onClick={() => {
+                            setModalVisible(true)
+                        }}
+                    >
+                        添加
+                    </Button>
+                }
             >
                 <Field
                     title=""

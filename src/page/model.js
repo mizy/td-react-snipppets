@@ -4,6 +4,7 @@ import service from "./service";
 export default {
     namespace: "demo",
     state: {
+        apiReady: false,
         list: []
     },
     effects: {
@@ -14,7 +15,8 @@ export default {
             yield put({
                 type: "updateState",
                 payload: {
-                    list: res
+                    list: res,
+                    apiReady: true
                 }
             });
         }

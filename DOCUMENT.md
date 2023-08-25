@@ -1,13 +1,13 @@
 ## 帮助文档
 https://sinan.tongdun.me/book/3085/article/26395
+
 ## 本地打包
 `npm i vsce -g`
 `vsce package`
 
 
 rookie
-old：fu63cw7zxguuddvrbqqjkqgmqy72trblekttzsue5tyywhdfen7q
-new：kdse4soviv24ze2qmzytapgawggjwizsvkoxxdao22behdg2w2aq
+new: mixgbny3pmru5mjcqoltnbyhddxjolzevras7rf5bmewclg2326a
 
 
 目前此应用路奇负责发布
@@ -23,6 +23,6 @@ vsce create-publisher td-tntd
 发现```The Personal Access Token used has expired```token过期的解决方案；  
 打开网址：https://sinan.tongdun.me/book/3085/article/26495  
 登录：vsce login td-tntd  
-输入token：kdse4soviv24ze2qmzytapgawggjwizsvkoxxdao22behdg2w2aq
+输入token：mixgbny3pmru5mjcqoltnbyhddxjolzevras7rf5bmewclg2326a
 
 
